@@ -17,8 +17,8 @@ btn.addEventListener("click",()=>{
         .then((response)=> response.json())
         .then((data)=>{
             console.log(data);
-            result.innerHTML = `
-            <div class="word">
+            result.innerHTML=
+                    `<div class="word">
                     <h3>${inpWord}</h3>
                     <button onclick="playSound()">
                         <i class="fas fa-volume-up" style='cursor: pointer;'></i>
@@ -39,7 +39,7 @@ btn.addEventListener("click",()=>{
         })
 
         .catch(()=>{
-            result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
+            result.innerHTML=`<h3 class="error">Couldn't Find The Word</h3>`;
     });
 });
 
